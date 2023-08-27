@@ -1,0 +1,168 @@
+.Chat-Button{
+    position: fixed;
+    right: 20px;
+    bottom: 10px;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+.send-button{
+    position: fixed;
+    right: 20px;
+    bottom: 50px;
+    display: flex;
+    text-align: center;
+    z-index: 1;
+}
+
+.icon-cont, .send-cont{
+    background-color: #facf0f;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 1px 1px 8px gray;
+    cursor: pointer;
+    z-index: 9;
+}
+
+
+.chat-icon{
+    font-size: 28px;
+}
+.send-icon{
+    font-size: 28px;
+}
+
+.chaticon-text{
+    opacity: 0;
+    transition: 1s;
+    transform: translateX(20px);
+}
+
+.wave-icon{
+    color: #e7bd01;
+    font-size: 18px;
+}
+
+.chaticon-text p{
+    padding: 8px 18px;
+    border-radius: 12px;
+    box-shadow: 1px 1px 10px rgb(194, 193, 193);
+    background-color: white;
+}
+.Chat-Button:hover .chaticon-text{
+    opacity: 1;
+    transform: translateX(-20px);
+    transition: 1s;
+}
+
+
+
+/* --------------------------------------------------------------------- */
+
+.Chat-Button .chat-card{
+    display: none;
+}
+
+.hide_chat-card{
+    display: none;
+}
+
+.chat-card{
+    background-color: #facf0f;
+    position: fixed;
+    bottom: 45px;
+    right: 50px;
+}
+
+
+.Chat-Button .send-cont{
+    display: none;
+}
+
+/* .send-button .send-cont{
+    display: block;
+    z-index: 9;
+} */
+
+.send-button .icon-cont{
+    display: none;
+}
+
+.chat-card{
+    width: 350px;
+    height: auto;
+    margin: auto;
+    border-radius: 16px;
+}
+
+
+.chat-card_heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 25px;
+}
+
+.chat-card_icon{
+    font-size: 25px;
+}
+
+.chat-card_icon:nth-child(2){
+    font-size: 35px;
+}
+
+.chat-card-intro{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px 25px 25px;
+}
+
+.chat-card-intro div:nth-child(2){
+    width: 65px;
+    margin-right: 15px;
+}
+
+.chat-card-intro div:nth-child(2) img{
+    box-shadow: 1px 1px 5px rgba(128, 128, 128, 0.404);
+    width: 100%;
+    border-radius: 50%;
+    background-size: cover;
+}
+
+
+.chat-card-intro div:nth-child(1){
+    width: 65%;
+}
+
+.chat-card_para{
+    background-color: #02020236;
+    padding: 4px 25px;
+}
+
+.chat-card_input{
+    background-color: white;
+    border-radius: 0px 0px 16px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chat-card_input input{
+    height: 50px;
+    width: 80%;
+    margin-left: 20px;
+    font-size: 17px;
+    border: transparent;
+    outline: transparent;
+    /* margin: 5px 0; */
+}
+
+.chat-card_input input:focus{
+    outline: transparent;
+}

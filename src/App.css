@@ -1,0 +1,17 @@
+body{
+    background-color: #f2f2f2;
+}
+
+.btn{
+    background-color: #facf0f;
+    
+    border-radius: 6px;
+    text-decoration: none;
+    color: rgb(51, 50, 50);
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    
+    top: 50px;
+    transition: .3s;
+}
