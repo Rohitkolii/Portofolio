@@ -1,11 +1,11 @@
 .About-inner_Container{
     /* background-color: aqua; */
     width: 95%;
-    margin: auto;
+    margin: 100px auto;
 }
 
 .yellow_text{
-    color: #facf0f;
+    color: #7843e9;
     /* text-decoration: none; */
     font-weight: 500;
 }
@@ -30,7 +30,7 @@
     margin: 5px auto;
     height: 4px;
     border-radius: 10px;
-    background-color: #facf0f;
+    background-color: #7843e9;
     transition: .3s;
 }
 
@@ -87,10 +87,13 @@
     list-style: none;
     font-weight: 600;
     color: #666;
+    transition: .5s;
 }
 
 .skills-tag:hover{
     background-color: #dddbdb;
+    color: #7843e9;
+    cursor: pointer;
 }
 
 .about-section_btn{

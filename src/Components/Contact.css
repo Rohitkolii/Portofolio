@@ -1,0 +1,134 @@
+.Contact-container{
+    background: url('https://img.freepik.com/free-vector/white-gray-geometric-pattern-background-vector_53876-136510.jpg?w=826&t=st=1668964211~exp=1668964811~hmac=e4c34e35c874d1adf974f69e36b672b8de8d5774bcf6d8404246ec6e4aca48a4');
+    background-size: cover;
+    /* height: 100vh; */
+    padding: 50px 0;
+}
+
+form{
+    background-color: white;
+    padding: 50px;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 30px;
+    color: rgb(92, 92, 92);;
+    box-shadow: 1px 1px 10px rgb(168, 168, 168);
+}
+
+
+.Contact-container h1{
+    text-align: center;
+    /* color: white; */
+    /* padding: 50px 0; */
+    text-transform: uppercase;
+}
+
+.Contact-container p{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(92, 92, 92);
+}
+
+.Contact-container h1:hover::after{
+    width: 150px;
+}
+
+.Contact-container h1::after{
+    content: '';
+    display: block;
+    width: 35px;
+    margin: 5px auto;
+    height: 4px;
+    border-radius: 10px;
+    background-color: #7843e9;
+    transition: .3s;
+}
+
+.inner-contact{
+    /* background-color: rgba(0, 0, 0, 0.836); */
+    padding: 20px 0;
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.inner-contact form input{
+    width: 100%;
+    height: 60px;
+    border-radius: 5px;
+    outline: transparent;
+    border: transparent;
+    margin: 10px 0 20px 0;
+    padding-left: 20px;
+    background-color: #f0f0f0;
+    font-weight: 600;
+    font-size: 15px;
+    color: rgb(92, 92, 92);
+}
+
+
+.inner-contact form label span{
+    color: rgb(255, 37, 37);
+}
+
+input:focus{
+    outline: transparent;
+}
+textarea:focus{
+    outline: transparent;
+}
+
+.inner-contact textarea{
+    width: 100%;
+    padding: 10px 10px;
+    margin-top: 15px;
+    background-color: #f0f0f0;
+    border: transparent;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.inner-contact .btn{
+    background-color: #7843e9;
+    cursor: pointer;
+    transition: .3s;
+    height: 40px;
+    font-size: 16px;
+    height: 60px;
+    float: right;
+    padding: 10px 50px;
+    width: fit-content;
+    color: white;
+}
+
+.inner-contact .btn:hover{
+    background-color: #7843e9e0;
+}
+
+@media only screen and (max-width:1000px){
+    .inner-contact{
+        width: 80%;
+    }
+
+    form{
+        width: 80%;
+    }
+}
+
+
+@media only screen and (max-width:650px){
+    .inner-contact{
+        width: 95%;
+    }
+    
+}
+
+@media only screen and (max-width:550px){
+    .inner-contact{
+        width: 95%;
+    }
+}

@@ -1,7 +1,7 @@
 .Chat-Button{
     position: fixed;
     right: 20px;
-    bottom: 10px;
+    bottom: 20px;
     display: flex;
     align-items: center;
     z-index: 1;
@@ -17,7 +17,7 @@
 }
 
 .icon-cont, .send-cont{
-    background-color: #facf0f;
+    background-color: #7843e9;
     width: 60px;
     height: 60px;
     display: flex;
@@ -31,10 +31,10 @@
 
 
 .chat-icon{
-    font-size: 28px;
+    font-size: 26px;
 }
 .send-icon{
-    font-size: 28px;
+    font-size: 26px;
 }
 
 .chaticon-text{
@@ -73,7 +73,7 @@
 }
 
 .chat-card{
-    background-color: #facf0f;
+    background-color: #7843e9;
     position: fixed;
     bottom: 45px;
     right: 50px;

@@ -3,8 +3,17 @@
     left: 0px;
     top: 35%;
     background-color: white;
-    border-radius: 6px;
-    box-shadow: 1px 1px 10px rgba(170, 168, 168, 0.733);
+    background-color: rgb(25, 25, 25);
+    border-radius: 0px 5px 5px 0px;
+    box-shadow: 1px 1px 10px rgba(95, 95, 95, 0.195);
+    animation: sparalax 1.2s ease;
+}
+
+@keyframes sparalax {
+    0%{
+        left: -50px;
+        opacity: 0;
+    }
 }
 
 .SocialLinks ul{
@@ -17,7 +26,7 @@
 }
 
 .social-icons{
-    color: black;
+    color: white;
     margin: 10px 0;
     font-size: 35px;
     transition: .5s;
@@ -25,6 +34,7 @@
 
 .social-icons:hover{
     transform: translateX(10px);
+    color: #7843e9;
 }
 
 @media only screen and (max-width: 1000px) {

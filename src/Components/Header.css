@@ -1,18 +1,29 @@
 .Header-container{
-    background:  linear-gradient(rgba(139, 136, 136, 0.185), rgba(112, 112, 107, 0.185)), url('https://img.freepik.com/free-vector/white-gray-geometric-pattern-background-vector_53876-136510.jpg?w=826&t=st=1668964211~exp=1668964811~hmac=e4c34e35c874d1adf974f69e36b672b8de8d5774bcf6d8404246ec6e4aca48a4');
-    /* background-color: aqua; */
+    background: url('https://img.freepik.com/free-vector/white-gray-geometric-pattern-background-vector_53876-136510.jpg?w=826&t=st=1668964211~exp=1668964811~hmac=e4c34e35c874d1adf974f69e36b672b8de8d5774bcf6d8404246ec6e4aca48a4');
+    /* background: linear-gradient(#f08a2a59, rgb(25, 25, 25)); */
+    /* background-color: rgb(25, 25, 25); */
     width: 100%;
     height: 100vh;
     overflow: hidden;
+    /* color: white; */
 }
 
 .Header-container div{
     text-align: center;
     position: relative;
     top: 25%;
+    opacity: 1;
+    animation: paralax 1.2s ease;
 }
 
-.Header-container div h1{
+@keyframes paralax {
+    0%{
+        top: 5%;
+        opacity: 0;
+    }
+}
+
+.header-content h1{
     font-size: 60px;
     font-weight: 900;
     text-transform: uppercase;
@@ -20,7 +31,7 @@
 
 .Header-container div p{
     font-size: 23px;
-    color: rgb(51, 50, 50);
+    /* color: rgb(51, 50, 50); */
 }
 
 .headerbtn{
@@ -28,7 +39,18 @@
     position: relative;
 }
 
-.btn:hover{
+/* .btn:hover{
     box-shadow: 1px 1px 5px rgba(128, 128, 128, 0.24);
     background-color: #ebc003;
+} */
+@media only screen and (max-width: 1000px){
+    .header-content{
+        width: 95%;
+        margin: auto;
+    }
+}
+@media only screen and (max-width: 700px){
+    .header-content h1{
+        font-size: 40px;
+    }
 }
