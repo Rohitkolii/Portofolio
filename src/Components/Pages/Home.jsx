@@ -4,6 +4,7 @@ import ChatButton from '../ChatButton'
 import SocialLinks from '../SocialLinks'
 import About from '../About'
 import Contact from '../Contact'
+import Footer from '../Footer'
 
 const Home = () => {
     return(
@@ -14,6 +15,7 @@ const Home = () => {
             <SocialLinks />
             <About />
             <Contact />
+            <Footer />
         </div>
     )
 }

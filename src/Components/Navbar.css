@@ -103,4 +103,8 @@ margin-right: 10px;}
         display: block;
         line-height: 80px;
     }
+
+    .Navbar-container{
+        padding: 0px 20px;
+    }
 }

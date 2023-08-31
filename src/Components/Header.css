@@ -11,14 +11,14 @@
 .Header-container div{
     text-align: center;
     position: relative;
-    top: 25%;
+    top: 35%;
     opacity: 1;
     animation: paralax 1.2s ease;
 }
 
 @keyframes paralax {
     0%{
-        top: 5%;
+        top: 0%;
         opacity: 0;
     }
 }
@@ -32,6 +32,7 @@
 .Header-container div p{
     font-size: 23px;
     /* color: rgb(51, 50, 50); */
+    margin: 30px 0;
 }
 
 .headerbtn{

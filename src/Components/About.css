@@ -121,8 +121,12 @@
 
     .About-row2_col1{
         width: 90%;
-        margin: 20px 0;
+        margin: 50px 0;
         /* padding: 10px 20px; */
+    }
+
+    .About-row1 p{
+        width: 85%;
     }
     
 }
