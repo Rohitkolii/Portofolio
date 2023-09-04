@@ -1,4 +1,4 @@
-import './SocialLinks.css'
+import '../styles/SocialLinks.css'
 import { Link } from "react-router-dom"
 import {AiFillLinkedin, AiOutlineTwitter, AiFillYoutube, AiFillGithub} from 'react-icons/ai'
 import {IoBook} from 'react-icons/io5'

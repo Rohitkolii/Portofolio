@@ -1,4 +1,4 @@
-import './ChatButton.css'
+import '../styles/ChatButton.css'
 import {BsFillChatLeftFill, BsThreeDotsVertical} from 'react-icons/bs'
 import {MdWavingHand, MdKeyboardArrowDown} from 'react-icons/md'
 import {IoIosSend} from 'react-icons/io'

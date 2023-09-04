@@ -54,4 +54,8 @@
     .header-content h1{
         font-size: 40px;
     }
+
+    .Header-container div{
+        top: 20%;
+    }
 }

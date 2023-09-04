@@ -1,4 +1,4 @@
-import './About.css'
+import '../styles/About.css'
 import { Link } from "react-router-dom"
 
 const About = () => {

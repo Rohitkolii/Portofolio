@@ -5,6 +5,7 @@ import SocialLinks from '../SocialLinks'
 import About from '../About'
 import Contact from '../Contact'
 import Footer from '../Footer'
+import Projects from '../Projects'
 
 const Home = () => {
     return(
@@ -14,6 +15,7 @@ const Home = () => {
             <ChatButton />
             <SocialLinks />
             <About />
+            <Projects />
             <Contact />
             <Footer />
         </div>

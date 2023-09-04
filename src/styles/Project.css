@@ -1,0 +1,145 @@
+/* Project css Style  */
+
+
+.inner_Project-cont{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 80px auto;
+    align-items: center;
+    gap: 80px;
+}
+
+.inner_Project-cont .img-con{
+    width: 50%;
+    object-position: left;
+    object-fit: contain;
+}
+
+.intro-con{
+    width: 40%;
+}
+
+.inner_Project-cont .img-con img{
+    width: 100%;
+}
+
+.btn{
+    padding: 10px 15px;
+    background-color: #7843e9;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: white;
+    transition: .3s;
+    position: relative;
+    top: 25px;
+}
+
+.btn:hover{
+    background-color: #7843e9e0;
+    /* box-shadow: 1px 1px 5px rgba(199, 199, 199, 0.989); */
+}
+
+
+.intro-con p{
+    color: rgb(85, 85, 85);
+    font-size: 16px;
+    line-height: 28px;
+}
+
+
+
+
+
+/* Projects Container css Area 0 */
+
+.Projects_main-con{
+    background-color: rgb(252, 252, 252);
+    padding: 50px 0;
+}
+
+.Projects_main-con .project-head{
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+
+
+.Projects_main-con h1{
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.Projects_main-con h1:hover::after{
+    width: 150px;
+}
+
+.Projects_main-con h1::after{
+    content: '';
+    display: block;
+    width: 35px;
+    margin: 5px auto;
+    height: 4px;
+    border-radius: 10px;
+    background-color: #7843e9;
+    transition: .3s;
+}
+
+.Projects_main-con .project-head p{
+    font-size: 18px;
+}
+
+@media only screen and (max-width:1000px) {
+    .inner_Project-cont{
+        width: 95%;
+    }
+    
+    .Projects_main-con .project-head{
+        text-align: center;
+        width: 80%;
+        margin: auto;
+    }
+
+    .inner_Project-cont .img-con{
+        width: 40%;
+    }
+    
+}
+@media only screen and (max-width:900px) {
+    .inner_Project-cont{
+        width: 98%;
+    }
+    
+    .intro-con{
+        width: 50%;
+    }
+    
+    .intro-con p{
+        line-height: 25px;
+    }
+}
+@media only screen and (max-width:700px) {
+    .inner_Project-cont{
+        flex-direction: column;
+    }
+    
+    .inner_Project-cont{
+        width: 90%;
+    }
+
+    .inner_Project-cont .img-con{
+        width: 100%;
+    }
+
+    .intro-con{
+        width: 100%;
+    }
+}
+@media only screen and (max-width:500px) {
+    .Projects_main-con .project-head{
+        width: 95%;
+    }
+}

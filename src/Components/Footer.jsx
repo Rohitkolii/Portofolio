@@ -1,7 +1,7 @@
 import React from 'react'
 import {AiOutlineInstagram, AiOutlineFacebook, AiOutlineGithub} from 'react-icons/ai'
 import { Link } from 'react-router-dom'
-import './Footer.css'
+import '../styles/Footer.css'
 
 
 const Footer = () => {
