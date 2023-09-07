@@ -4,15 +4,15 @@
     padding: 0px 50px;
     align-items: center;
     text-transform: uppercase;
-    background-color: rgb(255, 255, 255);
+    /* background-color: #040D12; */
     height: 5.6rem;
-    position: fixed;
+    /* position: fixed;
     top: 0;
     left: 0;
-    right: 0;
+    right: 0; */
     /* width: 100%; */
     z-index: 1;
-    box-shadow: 1px 1px 20px #b8b6b680;
+    /* box-shadow: 1px 1px 20px #b8b6b680; */
     /* color: white; */
 }
 
@@ -24,8 +24,8 @@
 
 .Navbar-container a{
     text-decoration: none;
-    color: #302f2f;
-    /* color: white; */
+    /* color: #302f2f; */
+    color: black;
     font-weight: 700;
     text-align: center;
     padding: 4px 8px;

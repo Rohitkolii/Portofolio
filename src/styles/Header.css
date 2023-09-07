@@ -1,61 +1,82 @@
 .Header-container{
-    background: url('https://img.freepik.com/free-vector/white-gray-geometric-pattern-background-vector_53876-136510.jpg?w=826&t=st=1668964211~exp=1668964811~hmac=e4c34e35c874d1adf974f69e36b672b8de8d5774bcf6d8404246ec6e4aca48a4');
-    /* background: linear-gradient(#f08a2a59, rgb(25, 25, 25)); */
-    /* background-color: rgb(25, 25, 25); */
     width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    /* color: white; */
+    /* box-shadow: 1px 1px 5px rgba(201, 201, 201, 0.662); */
 }
-
-.Header-container div{
+.innercontent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    position: relative;
-    top: 35%;
+    z-index: 1;
+    gap: 10px;
+    width: 80%;
+    margin: auto;
     opacity: 1;
     animation: paralax 1.2s ease;
+    /* color: white; */
+    padding: 20px 0;
+    
 }
+
+.header-image{
+    width: 320px;
+    height: 100%;
+    /* border: 5px solid red; */
+}
+
+.header-image img{
+    width: 100%;
+    /* height: 100%; */
+    border-bottom: 2px solid #7843e9;
+    border-radius: 50%;
+    filter: drop-shadow(5px 5px 5px #7843e98f);
+}
+
+.header-content h1{
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #7843e9;
+}
+
+.header-content p{
+    /* color: rgb(221, 221, 221); */
+    width: 80%;
+    margin: 10px auto;
+}
+
+
+/* .Header-container video{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+} */
 
 @keyframes paralax {
     0%{
-        top: 0%;
+        padding: 0px 0;
         opacity: 0;
     }
 }
 
-.header-content h1{
-    font-size: 60px;
-    font-weight: 900;
-    text-transform: uppercase;
-}
 
-.Header-container div p{
-    font-size: 23px;
-    /* color: rgb(51, 50, 50); */
-    margin: 30px 0;
-}
 
-.headerbtn{
-    padding: 18px 65px;
-    position: relative;
-}
+@media only screen and (max-width: 500px) {
 
-/* .btn:hover{
-    box-shadow: 1px 1px 5px rgba(128, 128, 128, 0.24);
-    background-color: #ebc003;
-} */
-@media only screen and (max-width: 1000px){
-    .header-content{
-        width: 95%;
-        margin: auto;
-    }
-}
-@media only screen and (max-width: 700px){
-    .header-content h1{
-        font-size: 40px;
+    .Header-container{
+        height: auto;
     }
 
-    .Header-container div{
-        top: 20%;
+    .header-image img{
+        width: 75%;
     }
+
+    .header-content p{
+        width: 98%;
+    }
+
 }

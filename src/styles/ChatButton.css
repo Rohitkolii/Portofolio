@@ -1,3 +1,5 @@
+
+
 .Chat-Button{
     position: fixed;
     right: 20px;
@@ -14,7 +16,7 @@
     bottom: 50px;
     display: flex;
     text-align: center;
-    z-index: 1;
+    z-index: 2;
     transition: .3s;
 }
 
@@ -87,16 +89,13 @@
     margin: auto;
     border-radius: 16px;
     transition: .3s;
+    padding-top: 10px;
+    z-index: 1;
 }
 
 .Chat-Button .send-cont{
     display: none;
 }
-
-/* .send-button .send-cont{
-    display: block;
-    z-index: 9;
-} */
 
 .send-button .icon-cont{
     display: none;
@@ -108,7 +107,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 25px;
+    padding: 10px 25px;
+}
+
+.chat-card_heading div p{
+    font-size: 20px;
+    font-weight: 500;
 }
 
 .chat-card_icon{
@@ -116,7 +120,7 @@
 }
 
 .chat-card_icon:nth-child(2){
-    font-size: 35px;
+    font-size: 28px;
 }
 
 .chat-card-intro{
@@ -133,7 +137,7 @@
 
 .chat-card-intro div:nth-child(2) img{
     box-shadow: 1px 1px 5px rgba(128, 128, 128, 0.404);
-    width: 100%;
+    width: 80%;
     border-radius: 50%;
     background-size: cover;
 }
@@ -168,4 +172,69 @@
 
 .chat-card_input input:focus{
     outline: transparent;
+}
+
+
+.close-btn{
+    display: none;
+}
+
+/* Meadia Query  */
+
+@media only screen and (max-width:500px) {
+    .chat-card{
+        background-color: #7843e9;
+        position: fixed;
+        bottom: 45px;
+        right: 50px;
+        box-shadow: 1px 1px 5px rgb(84, 84, 84);
+        transition: .3s;
+        width: 80%;
+        height: auto;
+        margin: auto;
+        border-radius: 16px;
+        transition: .3s;
+        padding-top: 0px;
+    }
+    
+    .chat-card_input{
+        border-radius:16px;
+    }
+
+    .chat-card-intro{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px 10px 15px 10px;
+        display: none;
+    }
+
+    .chat-card_heading{
+        display: none;
+    }
+
+    .chat-card_para{
+        display: none;
+    }
+
+    .chat-card_icon{
+        font-size: 20px;
+    }
+
+    .chat-card_input{
+        position: relative;
+    }
+
+    .close-btn{
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: black;
+        color: white;
+        border-radius: 50%;
+        font-size: 22px;
+        padding: 2px;
+        transform: translate(-20%, -20%);
+    }
 }

@@ -1,4 +1,4 @@
-import Navbar from '../Navbar'
+// import Navbar from '../Navbar'
 import Header from '../Header'
 import ChatButton from '../ChatButton'
 import SocialLinks from '../SocialLinks'
@@ -10,7 +10,7 @@ import Projects from '../Projects'
 const Home = () => {
     return(
         <div className="Home-page">
-            <Navbar />
+            {/* <Navbar /> */}
             <Header />
             <ChatButton />
             <SocialLinks />

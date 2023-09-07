@@ -4,7 +4,7 @@ import '../styles/Project.css'
 
 const Project = ({item}) => {
   return (
-    <div className='Project-cont'>
+    <div key={item.title} className='Project-cont'>
         <div className='inner_Project-cont'>
             <div className='img-con'>
                 <img src={item.img} alt="foodo" />

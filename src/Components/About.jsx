@@ -33,9 +33,9 @@ const About = () => {
                         <h3>My Skills</h3>
                             <ul>
                             {
-                                skills.map((tag) => {
+                                skills.map((tag, i) => {
                                     return (
-                                            <li className="skills-tag">
+                                            <li key={i} className="skills-tag">
                                                 {tag}
                                             </li>
                                     )

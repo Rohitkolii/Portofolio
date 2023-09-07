@@ -6,6 +6,15 @@
     width: 100%;
 }
 
+.inner-contact{
+    /* background-color: rgba(0, 0, 0, 0.836); */
+    padding: 20px 0;
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
 form{
     background-color: white;
     padding: 50px;
@@ -46,14 +55,6 @@ form{
     transition: .3s;
 }
 
-.inner-contact{
-    /* background-color: rgba(0, 0, 0, 0.836); */
-    padding: 20px 0;
-    width: 50%;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-}
 
 .inner-contact form input{
     width: 98%;
@@ -63,7 +64,7 @@ form{
     border: transparent;
     margin: 10px 0 20px 0;
     padding-left: 2%;
-    background-color: #e1e1e1;
+    background-color: #f1f1f1;
     font-weight: 600;
     font-size: 15px;
     color: rgb(92, 92, 92);
@@ -85,7 +86,7 @@ textarea:focus{
     width: 98%;
     padding: 2%;
     margin-top: 15px;
-    background-color: #e1e1e1;
+    background-color: #f1f1f1;
     border: transparent;
     border-radius: 5px;
     font-weight: 600;
@@ -136,15 +137,21 @@ textarea:focus{
 }
 
 @media only screen and (max-width:550px){
-    /* .inner-contact{
-        width: 100vw;
-    } */
+    .inner-contact{
+        width: 90%;
+    }
 
     form{
-        padding: 30px 15px;
-        width: 90%;
+        padding: 30px 10px;
+        width: 100%;
         margin: auto;
     }
 
     
+}
+
+@media only screen and (max-width:400px){
+    .inner-contact{
+        width: 98%;
+    }
 }

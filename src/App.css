@@ -1,9 +1,9 @@
 body{
-    background-color: #f9f9f9;
+    /* background-color: #f9f9f9; */
 }
 
 .btn{
-    background-color: #7843e9;
+    /* background-color: #7843e9; */
     
     border-radius: 6px;
     text-decoration: none;
@@ -17,6 +17,6 @@ body{
 }
 
 .btn:hover{
-    background-color: #7843e9e0;
-    /* box-shadow: 1px 1px 5px rgba(199, 199, 199, 0.989); */
+    background-color: #6b26ffba;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.389);
 }

@@ -64,17 +64,17 @@ const Contact = () => {
         <div className='inner-contact'>
             <form ref={form} onSubmit={sendEmail}>
                 {/* <div> */}
-                    <label for="name">Name <span>*</span> :</label> <br />
+                    <label>Name <span>*</span> :</label> <br />
                     <input onChange={(e)=> setname(e.target.value)} type="text" name="user_name" value={name}  placeholder='Enter Name' />
                 {/* </div> */}
 
                 {/* <div> */}
-                    <label htmlFor="">Mail <span>*</span> :</label> <br />
+                    <label>Mail <span>*</span> :</label> <br />
                     <input onChange={(e)=> setmail(e.target.value)} type="email" name="user_email" value={mail}  placeholder='Enter Email Id'/>
                 {/* </div> */}
 
                 {/* <div> */}
-                    <label htmlFor="">Message <span>*</span> :</label> <br />
+                    <label>Message <span>*</span> :</label> <br />
                     <textarea onChange={(e)=> setmessage(e.target.value)} name="message" cols="30" rows="10" value={message} placeholder='Enter Message Here'></textarea>
                     {err ? <p style={{fontSize: 15, color: 'rgb(255, 37, 37)', textAlign: 'left'}}>Please fill all fields! Message !</p> : '' }
                 {/* </div> */}

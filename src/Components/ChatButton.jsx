@@ -1,5 +1,6 @@
 import '../styles/ChatButton.css'
 import {BsFillChatLeftFill, BsThreeDotsVertical} from 'react-icons/bs'
+import {AiOutlineClose} from 'react-icons/ai'
 import {MdWavingHand, MdKeyboardArrowDown} from 'react-icons/md'
 import {IoIosSend} from 'react-icons/io'
 import { useState } from 'react'
@@ -33,7 +34,7 @@ const ChatButton = () => {
                 <div className='inner_chat-card'>
                     <div className='chat-card_heading'>
                         <div>
-                            <h1>Hi There</h1>
+                            <p>Hi There</p>
                         </div>
                         <div>
                             <BsThreeDotsVertical className='chat-card_icon' />
@@ -52,6 +53,7 @@ const ChatButton = () => {
                         <p>We reply immediately</p>
                     </div>
                     <div className='chat-card_input'>
+                        <AiOutlineClose onClick={() => setchatbutton(false)} className='close-btn' />
                         {/* <input type="email" placeholder='Enter your email...' />
                         <hr className='chat-cart_hr' /> */}
                         <input type="text" placeholder='Enter your message...' />

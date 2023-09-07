@@ -36,7 +36,7 @@ const Projects = () => {
         </div>
         <div>
           {
-            projectdata.map((item)=> <Project item={item} />)
+            projectdata.map((item, i)=> <Project key={i} item={item} />)
           }
         </div>
         <div style={{textAlign: 'center', margin: '100px 0 50px 0'}}>
