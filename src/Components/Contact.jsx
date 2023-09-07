@@ -1,5 +1,3 @@
-'use client'
-
 import React, { useRef, useState } from 'react'
 import '../styles/Contact.css'
 import emailjs from '@emailjs/browser';

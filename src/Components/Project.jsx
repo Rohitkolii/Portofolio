@@ -12,7 +12,7 @@ const Project = ({item}) => {
             <div className='intro-con'>
                 <h2>{item.title}</h2>
                 <p>{item.intro}</p>
-                <Link href='' className='btn'>Know More</Link>
+                <Link href='/' className='btn'>Know More</Link>
             </div>
         </div>
     </div>
