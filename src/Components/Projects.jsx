@@ -7,12 +7,12 @@ const Projects = () => {
 
   const projectdata = [
     {
-    img: 'images/foodo.png',
+    img: './images/foodo.png',
     title: 'Foodo',
     intro: 'Dopefolio is a successful Open-Source project that I created which have been featured on some of the biggest tech sites like CSS-Tricks, Hostinger, etc & used by thousands of developers globally'
   },
     {
-    img: 'images/shopingo.png',
+    img: './images/shopingo.png',
     title: 'Shopingo',
     intro: 'Dopefolio is a successful Open-Source project that I created which have been featured on some of the biggest tech sites like CSS-Tricks, Hostinger, etc & used by thousands of developers globally'
   },
