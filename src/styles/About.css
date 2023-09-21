@@ -1,6 +1,7 @@
 .About-container{
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.384);
 }
+
 
 .About-inner_Container{
     width: 95%;
@@ -9,7 +10,7 @@
 }
 
 .yellow_text{
-    color: #7843e9;
+    color: #4C4C6D;
     /* text-decoration: none; */
     font-weight: 500;
 }
@@ -34,13 +35,13 @@
     margin: 5px auto;
     height: 4px;
     border-radius: 10px;
-    background-color: #7843e9;
+    background-color: #4C4C6D;
     transition: .3s;
 }
 
 .About-row1 p{
     color: rgb(46, 46, 46);
-    font-size: 19px;
+    font-size: 17px;
     width: 65%;
     margin: auto;
     /* font-weight: 500; */
@@ -63,7 +64,7 @@
 
 .About-row2_col1 p{
     color: rgb(51, 50, 50);
-    font-size: 17px;
+    font-size: 16px;
     /* font-weight: 500; */
 }
 
@@ -96,15 +97,10 @@
 
 .skills-tag:hover{
     background-color: #dddbdb;
-    color: #7843e9;
+    color: #4C4C6D;
     cursor: pointer;
 }
 
-.about-section_btn{
-    padding: 12px 25px;
-    position: relative;
-    top: 35px;
-}
 @media only screen and (max-width: 1000px) {
 
     .About-row2{
@@ -124,13 +120,67 @@
     }
 
     .About-row2_col1{
-        width: 90%;
-        margin: 50px 0;
+        width: 100%;
+        margin-bottom: 50px;
         /* padding: 10px 20px; */
     }
 
+    .About-row2_col1 p{
+        font-size: 15px;
+    }
+
     .About-row1 p{
-        width: 85%;
+        width: 90%;
+        font-size: 15px;
     }
     
+}
+
+
+
+
+
+
+
+
+.Aboutmain_container{
+    display:flex;
+    justify-content:center;
+}
+
+.aboutimg{
+    width: 400px;
+    position: relative;
+    overflow-y: hidden;
+}
+
+.aboutimg img{
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+}
+
+.aboutimg p{
+    position: absolute;
+    bottom: -100px;
+    left: 10px;
+    transition: .5s;
+}
+
+.aboutimg img:hover{
+    opacity: .5;
+    filter: brightness(0.5);
+}
+
+.aboutimg img:hover ~ p{
+    bottom: 50%;
+}
+
+.aboutimg p:hover{
+    bottom: 50%;
+}
+
+.aboutimg p:hover ~ .aboutimg img{
+    opacity: .5;
+    filter: brightness(0.5);
 }

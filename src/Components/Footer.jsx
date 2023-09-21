@@ -5,6 +5,10 @@ import '../styles/Footer.css'
 
 
 const Footer = () => {
+
+  // const mode = localStorage.getItem("mode")
+
+
   return (
     <div className='footer'>
         <div>

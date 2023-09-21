@@ -1,0 +1,67 @@
+.SkillsCon{
+    text-align: center;
+    padding: 50px;
+    background-color: rgb(243, 243, 243);
+}
+
+.skillintro{
+    margin: 20px auto;
+    text-transform: capitalize;
+}
+
+.skillsimg{
+    width: 70px;
+    margin: auto;
+    cursor: pointer;
+    padding: 12px 10px;
+    border-radius: 20px;
+}
+
+
+.skillsimg img{
+    width: 100%;
+    object-fit: contain;
+    transition: .5s;
+    /* border: 1px solid red; */
+}
+
+.skillsimg img:hover{
+    transform:translateY(-10px)
+}
+
+.skillsimg p{
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.innerSkills{
+    width: 70%;
+    margin: auto;
+    margin: 60px auto;
+}
+
+.skillarea{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 70%;
+    margin: auto;
+}
+
+.SkillsCon h1:hover::after{
+    width: 150px;
+}
+
+.SkillsCon h1::after{
+    content: '';
+    display: block;
+    width: 35px;
+    margin: 5px auto;
+    height: 4px;
+    border-radius: 10px;
+    background-color: #4C4C6D;
+    transition: .3s;
+}

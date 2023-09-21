@@ -4,6 +4,10 @@ import {AiFillLinkedin, AiOutlineTwitter, AiFillYoutube, AiFillGithub} from 'rea
 import {IoBook} from 'react-icons/io5'
 
 const SocialLinks = () => {
+
+    // const mode = localStorage.getItem("mode")
+
+
     return(
         <div className="SocialLinks">
             <ul>

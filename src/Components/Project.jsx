@@ -3,6 +3,10 @@ import { Link } from 'react-router-dom'
 import '../styles/Project.css'
 
 const Project = ({item}) => {
+
+  // const mode = localStorage.getItem("mode")
+
+
   return (
     <div key={item.title} className='Project-cont'>
         <div className='inner_Project-cont'>

@@ -2,8 +2,8 @@
     position: absolute;
     left: 0px;
     top: 35%;
-    background-color: white;
-    background-color: rgb(25, 25, 25);
+    /* background-color: white; */
+    /* background-color: rgb(25, 25, 25); */
     border-radius: 0px 5px 5px 0px;
     box-shadow: 1px 1px 10px rgba(95, 95, 95, 0.195);
     animation: sparalax 1.2s ease;
@@ -26,7 +26,8 @@
 }
 
 .social-icons{
-    color: white;
+    /* color: white; */
+    color: black;
     margin: 10px 0;
     font-size: 35px;
     transition: .5s;
@@ -34,7 +35,7 @@
 
 .social-icons:hover{
     transform: translateX(10px);
-    color: #7843e9;
+    color: #4C4C6D;
 }
 
 @media only screen and (max-width: 1000px) {

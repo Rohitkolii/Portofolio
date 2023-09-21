@@ -4,18 +4,9 @@
     padding: 0px 50px;
     align-items: center;
     text-transform: uppercase;
-    /* background-color: #040D12; */
     height: 5.6rem;
-    /* position: fixed;
-    top: 0;
-    left: 0;
-    right: 0; */
-    /* width: 100%; */
     z-index: 1;
-    /* box-shadow: 1px 1px 20px #b8b6b680; */
-    /* color: white; */
 }
-
 .Navbar-container ul li{
     display: inline-block;
     margin: 0 10px;
@@ -26,7 +17,7 @@
     text-decoration: none;
     /* color: #302f2f; */
     color: black;
-    font-weight: 700;
+    font-weight: 600;
     text-align: center;
     padding: 4px 8px;
     font-size: 17px;
@@ -34,7 +25,7 @@
 }
 
 .Navbar-container ul a:hover{
-    color: #7843e9;
+    color: #4C4C6D;
 }
 
 .Navbar-container .logo_container a{
@@ -43,8 +34,8 @@
 }
 
 .logo_image-container{
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     overflow: hidden;
     margin-right: 10px;
@@ -64,6 +55,14 @@ margin-right: 10px;}
     font-size: 32px;
 }
 
+.nav-menu_list ul{
+    display: flex;
+    align-items: center;
+}
+
+
+
+
 @media only screen and (max-width: 736px) {
     .nav-menu{
         display: block;
@@ -77,13 +76,14 @@ margin-right: 10px;}
         transform: translateX(-100%);
         position: absolute;
         left: 0;
-        top: 4.1rem;
-        transition: .3s;
-        padding: 50px 0px;
+        top: 5.6rem;
+        transition: .5s;
+        padding: 20px 0px;
+        z-index: 1;
     }
     .nav-menu_list ul li{
         display: block;
-        line-height: 80px;
+        line-height: 70px;
     }
     
     .res_nav-menu_list ul{
@@ -92,16 +92,17 @@ margin-right: 10px;}
         height: 100vh;
         position: absolute;
         left: 0;
-        top: 4.1rem;
+        top: 5.6rem;
         text-align: center;
-        padding: 50px 0px;
+        padding: 20px 0px;
         transform: translateX(0%);
-        transition: .3s;
+        transition: .5s;
+        z-index: 1;
     }
 
     .res_nav-menu_list ul li{
         display: block;
-        line-height: 80px;
+        line-height: 70px;
     }
 
     .Navbar-container{

@@ -8,6 +8,9 @@ const ChatButton = () => {
 
     const [chatbutton, setchatbutton] = useState(false)
 
+    // const mode = localStorage.getItem("mode")
+
+
     return(
         <>
             <div className='Chat-container'>

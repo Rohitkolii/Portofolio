@@ -21,9 +21,9 @@
 }
 
 .icon-cont, .send-cont{
-    background-color: #7843e9;
-    width: 60px;
-    height: 60px;
+    background-color: #4C4C6D;
+    width: 50px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -35,10 +35,12 @@
 
 
 .chat-icon{
-    font-size: 26px;
+    font-size: 20px;
+    color: white;
 }
 .send-icon{
-    font-size: 26px;
+    font-size: 20px;
+    color: white;
 }
 
 .chaticon-text{
@@ -78,7 +80,8 @@
 }
 
 .chat-card{
-    background-color: #7843e9;
+    background-color: #4C4C6D;
+    color: white;
     position: fixed;
     bottom: 45px;
     right: 50px;
@@ -230,11 +233,11 @@
         position: absolute;
         left: 0;
         top: 0;
-        background-color: black;
+        background-color: #4C4C6D;
         color: white;
         border-radius: 50%;
-        font-size: 22px;
-        padding: 2px;
+        font-size: 25px;
+        padding: 5px;
         transform: translate(-20%, -20%);
     }
 }

@@ -3,30 +3,9 @@ import Project from './Project'
 import '../styles/Project.css'
 import { Link } from 'react-router-dom'
 
-const Projects = () => {
+const Projects = ({projectdata}) => {
 
-  const projectdata = [
-    {
-    img: '../images/foodo.png',
-    title: 'Foodo',
-    intro: 'Dopefolio is a successful Open-Source project that I created which have been featured on some of the biggest tech sites like CSS-Tricks, Hostinger, etc & used by thousands of developers globally'
-  },
-    {
-    img: '../images/shopingo.png',
-    title: 'Shopingo',
-    intro: 'Dopefolio is a successful Open-Source project that I created which have been featured on some of the biggest tech sites like CSS-Tricks, Hostinger, etc & used by thousands of developers globally'
-  },
-  //   {
-  //   img: 'images/foodo.png',
-  //   title: 'Foodo',
-  //   intro: 'Dopefolio is a successful Open-Source project that I created which have been featured on some of the biggest tech sites like CSS-Tricks, Hostinger, etc & used by thousands of developers globally'
-  // },
-  //   {
-  //   img: 'images/shopingo.png',
-  //   title: 'Shopingo',
-  //   intro: 'Dopefolio is a successful Open-Source project that I created which have been featured on some of the biggest tech sites like CSS-Tricks, Hostinger, etc & used by thousands of developers globally'
-  // },
-]
+  // const mode = localStorage.getItem("mode")
 
   return (
     <div className='Projects_main-con'>
@@ -40,7 +19,7 @@ const Projects = () => {
           }
         </div>
         <div style={{textAlign: 'center', margin: '100px 0 50px 0'}}>
-          <Link className='btn'>See more projects</Link>
+          <Link to='/Projects' className='black-btn'>See more projects</Link>
         </div>
     </div>
   )
