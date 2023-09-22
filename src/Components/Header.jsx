@@ -1,6 +1,7 @@
 import Navbar from './Navbar'
 import '../styles/Header.css'
 import { Link } from 'react-router-dom';
+import headimg from '../Images/imgg.png'
 const Header = () => {
 
     // const mode = localStorage.getItem("mode")
@@ -8,16 +9,11 @@ const Header = () => {
     return(
         <section className= "Header-container">
             <Navbar />
-            {/* Header Background */}
-            {/* <div className='glass'></div>
-            <video autoPlay muted loop playsInline>
-                <source src="images/bgtech.mp4" typeof='video/mp4' />
-            </video> */}
 
             <div className="innercontent">
 
                 <div className='header-image'>
-                    <img src="./images/imgg.png" alt="its-me" />
+                    <img src={headimg} alt="its-me" />
                 </div>
 
                 <div className='header-content'>

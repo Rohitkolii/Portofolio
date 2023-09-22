@@ -4,6 +4,10 @@ import {AiOutlineClose} from 'react-icons/ai'
 import {MdWavingHand, MdKeyboardArrowDown} from 'react-icons/md'
 import {IoIosSend} from 'react-icons/io'
 import { useState } from 'react'
+
+import logo from '../Images/logo.webp'
+
+
 const ChatButton = () => {
 
     const [chatbutton, setchatbutton] = useState(false)
@@ -49,7 +53,7 @@ const ChatButton = () => {
                             <p>Welcome to my website. Ask me anything</p>
                         </div>
                         <div>
-                            <img src="/images/logo.webp" alt="profile" />
+                            <img src={logo} alt="profile" />
                         </div>
                     </div>
                     <div className='chat-card_para'>

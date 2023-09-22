@@ -4,6 +4,8 @@ import { FiMenu }  from "react-icons/fi"
 import { MdDarkMode , MdLightMode }  from "react-icons/md"
 import { useState } from 'react'
 
+import logo from '../Images/logo.webp'
+
 const Navbar = () => {
 
     const [menu, setmenu] = useState(false);
@@ -26,7 +28,7 @@ const Navbar = () => {
             <div className='logo_container'>
                 <Link to='/'>
                     <div className='logo_image-container'>
-                        <img src='./Images/logo.webp' alt="profile" />
+                        <img src={logo} alt="profile" />
                     </div>
                     <p>Rohit Koli</p>
                 </Link>
