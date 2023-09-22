@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "../styles/Skills.css"
 
 import html from '../Images/html.png'
@@ -12,12 +12,20 @@ import c from '../Images/c.png'
 import cpp from '../Images/cpp.png'
 
 
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
 const Skils = () => {
+
+  useEffect(()=>{
+    AOS.init({duration: 2000})
+  }, [])
+
   return (
     <div className='SkillsCon'>
       <h1>SKILLS</h1>
       <p className='skillintro'>These are the my top Skills that i have used in my variouse Projects.</p>
-      <div className='innerSkills'>
+      <div className='innerSkills' data-aos="fade-up">
         <div className='skillarea'>
           <div className='skillsimg'>
               <img src={html} alt="html" />
@@ -30,12 +38,12 @@ const Skils = () => {
           </div>
 
           <div className='skillsimg'>
-              <img src={js} alt="JavaScript" />
+              <img style={{height: 50, objectFit: 'cover'}} src={js} alt="JavaScript" />
               <p>Javascript</p>
           </div>
 
           <div className='skillsimg'>
-              <img src={react} alt="ReactJS" />
+              <img style={{height: 45, objectFit: 'cover'}} src={react} alt="ReactJS" />
               <p>ReactJS</p>
           </div>
 

@@ -89,11 +89,15 @@
     margin-bottom: 10px;
 }
 
-.Projects_main-con h1:hover::after{
+.Projects_main-con h1:hover::after,
+.mainproject-head:hover::after
+{
     width: 150px;
 }
 
-.Projects_main-con h1::after{
+.Projects_main-con h1::after,
+.mainproject-head::after
+{
     content: '';
     display: block;
     width: 35px;

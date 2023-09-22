@@ -1,22 +1,24 @@
 import '../styles/About.css'
 import { Link } from "react-router-dom"
 
+import mymain from '../Images/imgg.png'
+
 const About = () => {
 
     // const mode = localStorage.getItem("mode")
 
-    const skills = [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "React JS",
-        "Bootstrap",
-        "Next JS",
-        "Redux",
-        "Git",
-        "C",
-        "C++"
-    ]
+    // const skills = [
+    //     "HTML",
+    //     "CSS",
+    //     "JavaScript",
+    //     "React JS",
+    //     "Bootstrap",
+    //     "Next JS",
+    //     "Redux",
+    //     "Git",
+    //     "C",
+    //     "C++"
+    // ]
 
     return(
         <section className="About-container">
@@ -34,7 +36,7 @@ const About = () => {
                         <Link className="btn about-section_btn" to='contact'>Contact</Link>
                     </div>
                     <div className="About-row2_col2">
-                        <div>
+                        {/* <div>
                         <h3>My Skills</h3>
                             <ul>
                             {
@@ -47,6 +49,10 @@ const About = () => {
                                 })
                             }
                             </ul>
+                        </div> */}
+
+                        <div className='abt-img'>
+                            <img src={mymain} alt="me" />
                         </div>
                     </div>
                 </div>

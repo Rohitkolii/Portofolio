@@ -1,6 +1,6 @@
 .SkillsCon{
     text-align: center;
-    padding: 50px;
+    padding: 50px 20px;
     background-color: rgb(243, 243, 243);
 }
 
@@ -26,7 +26,7 @@
 }
 
 .skillsimg img:hover{
-    transform:translateY(-10px)
+    transform:translateY(-10px) scale(120%);
 }
 
 .skillsimg p{
@@ -64,4 +64,10 @@
     border-radius: 10px;
     background-color: #4C4C6D;
     transition: .3s;
+}
+
+@media only screen and (max-width: 500px) {
+    .skillarea{
+        gap: 20px 35px;
+    }
 }

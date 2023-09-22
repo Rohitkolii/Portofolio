@@ -20,7 +20,7 @@ const Contact = () => {
     const sendEmail = (e) => {
       e.preventDefault();
 
-      if(name != null && mail != null && message != null){
+      if(name && mail && message){
           
           emailjs.sendForm('service_unk70pt', 'template_rmhzg26', form.current, 'EoRqXeN9WXwvaf8lr')
         .then((result) => {
@@ -35,6 +35,10 @@ const Contact = () => {
                 progress: undefined,
                 theme: "dark",
             });
+
+            setmail('')
+            setname('')
+            setmessage('')
             
             e.target.reset();
         }, (error) => {
@@ -54,6 +58,16 @@ const Contact = () => {
         e.target.reset();
     } else{
         seterr(true)
+        toast.error('Fill all input fields!', {
+            position: "top-center",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "dark",
+        });
     }
     };
 

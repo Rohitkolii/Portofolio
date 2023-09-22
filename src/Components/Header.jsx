@@ -2,15 +2,24 @@ import Navbar from './Navbar'
 import '../styles/Header.css'
 import { Link } from 'react-router-dom';
 import headimg from '../Images/imgg.png'
+
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import { useEffect } from 'react';
+
 const Header = () => {
 
     // const mode = localStorage.getItem("mode")
 
+    useEffect(()=>{
+        AOS.init({duration: 2000})
+      }, [])
+    
     return(
         <section className= "Header-container">
             <Navbar />
 
-            <div className="innercontent">
+            <div className="innercontent" data-aos="fade-down">
 
                 <div className='header-image'>
                     <img src={headimg} alt="its-me" />

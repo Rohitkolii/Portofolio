@@ -14,16 +14,18 @@ import pro2 from '../../Images/shopingo.png'
 const Home = () => {
 
     const projectdata = [
-        {
+      {
         img: pro1,
         title: 'Foodo',
-        intro: 'Dopefolio is a successful Open-Source project that I created which have been featured on some of the biggest tech sites like CSS-Tricks, Hostinger, etc & used by thousands of developers globally'
+        intro: 'I built a dynamic food ordering site using HTML, CSS, JavaScript, and React Context API. Features include secure login/logout and seamless API data handling, highlighting my web dev skills.',
+        projectlink : 'https://myfoodo.vercel.app/'
       },
         {
         img: pro2,
         title: 'Shopingo',
-        intro: 'Dopefolio is a successful Open-Source project that I created which have been featured on some of the biggest tech sites like CSS-Tricks, Hostinger, etc & used by thousands of developers globally'
-      }
+        intro: 'I spearheaded a basic e-commerce site using HTML, CSS, JavaScript, and React Context API. Efficient state management enhances user experience, demonstrating core web tech skills.',
+        projectlink : 'https://shopingo.vercel.app/'
+      },
     ]
     
 

@@ -14,7 +14,6 @@
     margin: auto;
     opacity: 1;
     animation: paralax 1.2s ease;
-    /* color: white; */
     padding: 20px 0;
     
 }
@@ -46,14 +45,20 @@
 
 
 .header-image img{
+    cursor: pointer;
     width: 100%;
     /* height: 100%; */
     /* border-bottom: 2px solid rgba(128, 128, 128, 0.452); */
     border-radius: 0px 0px 0px 50%;
     filter: drop-shadow(5px 5px 5px #4c4c6dab);
+    transition: all ease .5s;
 }
 
-.header-content h1{
+.header-image img:hover{
+    transform: scale(102%);
+}
+
+    .header-content h1{
     /* text-transform: uppercase; */
     text-transform: uppercase;
     font-size: 40px;
