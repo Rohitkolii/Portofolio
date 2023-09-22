@@ -11,7 +11,7 @@ const Project = ({item}) => {
     <div key={item.title} className='Project-cont'>
         <div className='inner_Project-cont'>
             <div className='img-con'>
-                <img src={item.img} alt="foodo" />
+                <img src={item.img} alt={item.title} />
             </div>
             <div className='intro-con'>
                 <h2>{item.title}</h2>

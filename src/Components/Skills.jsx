@@ -9,47 +9,47 @@ const Skils = () => {
       <div className='innerSkills'>
         <div className='skillarea'>
           <div className='skillsimg'>
-              <img src="./images/html.png" alt="" />
+              <img src="./images/html.png" alt="html" />
               <p>HTML</p>
           </div>
 
           <div className='skillsimg'>
-              <img src="./images/css.png" alt="" />
+              <img src="./images/css.png" alt="css" />
               <p>CSS</p>
           </div>
 
           <div className='skillsimg'>
-              <img src="./images/javascript.png" alt="" />
+              <img src="./images/javascript.png" alt="JavaScript" />
               <p>JavaScript</p>
           </div>
 
           <div className='skillsimg'>
-              <img src="./images/react.png" alt="" />
-              <p>REactJS</p>
+              <img src="./images/react.png" alt="ReactJS" />
+              <p>ReactJS</p>
           </div>
 
           <div className='skillsimg'>
-              <img src="./images/next.png" alt="" />
+              <img src="./images/next.png" alt="NextJS" />
               <p>NextJS</p>
           </div>
 
           <div className='skillsimg'>
-              <img src="./images/redux.webp" alt="" />
+              <img src="./images/redux.webp" alt="Redux" />
               <p>Redux</p>
           </div>
 
           <div className='skillsimg'>
-              <img src="./images/boot.png" alt="" />
+              <img src="./images/boot.png" alt="Bootstrap" />
               <p>Bootstrap</p>
           </div>
 
           <div className='skillsimg'>
-              <img src="./images/c.png" alt="" />
+              <img src="./images/c.png" alt="c language" />
               <p>C</p>
           </div>
 
           <div className='skillsimg'>
-              <img src="./images/cpp.png" alt="" />
+              <img src="./images/cpp.png" alt="c++" />
               <p>C++</p>
           </div>
         </div>

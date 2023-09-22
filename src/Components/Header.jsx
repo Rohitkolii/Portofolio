@@ -17,7 +17,7 @@ const Header = () => {
             <div className="innercontent">
 
                 <div className='header-image'>
-                    <img src="../images/imgg.png" alt="its-me" />
+                    <img src="./images/imgg.png" alt="its-me" />
                 </div>
 
                 <div className='header-content'>
