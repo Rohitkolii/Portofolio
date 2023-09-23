@@ -6,8 +6,6 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
 
-    // const mode = localStorage.getItem("mode")
-
 
     const form = useRef()
 
