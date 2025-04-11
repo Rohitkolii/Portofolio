@@ -5,7 +5,7 @@ import {MdWavingHand, MdKeyboardArrowDown} from 'react-icons/md'
 import {IoIosSend} from 'react-icons/io'
 import { useState } from 'react'
 
-import logo from '../Images/logo.webp'
+import logo from '../Images/img.jpeg'
 
 
 const ChatButton = () => {
@@ -44,7 +44,7 @@ const ChatButton = () => {
                             <p>Hi There</p>
                         </div>
                         <div>
-                            <BsThreeDotsVertical className='chat-card_icon' />
+                            {/* <BsThreeDotsVertical className='chat-card_icon' /> */}
                             <MdKeyboardArrowDown className='chat-card_icon' onClick={() => setchatbutton(false)} />
                         </div>
                     </div>

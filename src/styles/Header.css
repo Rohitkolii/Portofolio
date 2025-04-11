@@ -9,47 +9,44 @@
     justify-content: space-between;
     align-items: center;
     z-index: 1;
-    gap: 10px;
+    /* gap: 10px; */
     width: 80%;
     margin: auto;
     opacity: 1;
     animation: paralax 1.2s ease;
-    padding: 20px 0;
-    
+    /* padding-top: 50px;
+    padding-bottom: 50px;
+     */
+     padding: 30px 0;
 }
-/* .innercontent{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    z-index: 1;
-    gap: 10px;
-    width: 80%;
-    margin: auto;
-    opacity: 1;
-    animation: paralax 1.2s ease;
-    padding: 20px 0;
-    
-} */
 
 .header-content{
     text-align: left;
 }
 
 .header-image{
-    width: 50%;
-    height: 100%;
-    /* border: 5px solid red; */
+    width: 35%;
+    /* height: 450px; */
+    position: relative;
 }
 
+.header-image div{
+    /* background-color: #0185CA; */
+    background-color: #1B56FD;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    /* left: 0; */
+    transform: rotate(-5deg);
+    /* filter: drop-shadow(5px 5px 5px #4c4c6dab); */
+    z-index: -1;
+    box-shadow: 1px 1px 5px gray;
+}
 
 .header-image img{
     cursor: pointer;
     width: 100%;
-    /* height: 100%; */
-    /* border-bottom: 2px solid rgba(128, 128, 128, 0.452); */
-    border-radius: 0px 0px 0px 50%;
     filter: drop-shadow(5px 5px 5px #4c4c6dab);
     transition: all ease .5s;
 }
@@ -58,25 +55,28 @@
     transform: scale(102%);
 }
 
-    .header-content h1{
-    /* text-transform: uppercase; */
+.header-content{
+    width: 65%;
+}
+
+.header-content h1{
     text-transform: uppercase;
-    font-size: 40px;
-    font-weight: 900;
-    /* color: #7843e9; */
+    font-size: 50px;
+    color: white;
+    font-family: "Kaushan Script", cursive;
 }
 
 .header-content .headpara{
-    color: rgb(97, 97, 97);
+    color: rgb(109, 109, 109);
     width: 80%;
-    /* margin: 10px auto; */
-    font-size: 13px;
+    font-size: 17px;
 }
 
 .domain{
-    color: #4C4C6D;
+    color: #1B56FD;
     font-size: 22px;
     font-weight: 500;
+    font-family: "Kaushan Script", cursive;
 }
 
 .head-btns{
@@ -88,22 +88,29 @@
 .head-btns a{
     text-decoration: none;
     padding: 10px 20px;
-    color: #4C4C6D;
-    border: 1px solid gray;
+    color: #fff;
+    background-color: #000;
     transition: .3s;
+    font-size: 18px;
 }
 
 .head-btns a:first-child:hover{
-    background-color: #4c4c6dd8;
+    background-color: #0185CA;
 }
 
 .head-btns a:first-child{
     color: white;
-    background-color: #4C4C6D;
+    background-color:#1B56FD;
+    
+}
+
+.head-btns a:nth-child(2){
+    border: 1px solid black;
 }
 
 .head-btns a:hover{
-    background-color: rgb(236, 236, 236);
+    background-color: rgb(40, 40, 40);
+    color: white;
 }
 
 
@@ -126,23 +133,20 @@
     .header-content h1{
         font-size: 30px;
     }
-
-    .head-btns{
-        justify-content: center;
-    }
 }
 
-@media only screen and (max-width: 736px) {
+@media only screen and (max-width: 750px) {
     .innercontent{
         flex-direction: column;
     }
 
     .innercontent .header-image{
-        width: 60%;
+        /* width: 75%; */
+        display: none;
     }
 
     .header-content{
-        text-align: center;
+        width: 95%;
     }
 
     .header-content h1{
@@ -158,27 +162,28 @@
     }
 }
 
-@media only screen and (max-width: 500px) {
-
-    .innercontent .header-image{
-        width: 80%;
-    }
-
-}
-
 @media only screen and (max-width: 400px) {
 
     .innercontent{
-        padding: 0px;
-        padding-bottom: 50px;
+        /* padding: 0px; */
+        padding: 20px 0;
         gap: 30px;
     }
-    .innercontent .header-image{
-        width: 75%;
+    
+
+    .head-btns a{
+        text-decoration: none;
+        padding: 10px 10px;
+        color: #fff;
+        background-color: #000;
+        transition: .3s;
+        font-size: 16px;
     }
 
-    .innercontent .header-image img{
-        border-radius: 40%;
+    .head-btns{
+        margin: 25px 0;
+        display: flex;
+        gap: 20px;
     }
 
 }

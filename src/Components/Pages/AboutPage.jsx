@@ -12,7 +12,7 @@ const AboutPage = () => {
     <>
         <Navbar />
         <About />
-        <Skills />
+        {/* <Skills /> */}
         <ChatButton />
     </>
   )

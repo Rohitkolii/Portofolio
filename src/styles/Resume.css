@@ -1,0 +1,30 @@
+.resume_inner{
+    width: 60%;
+    margin: 50px auto;
+}
+
+.resume_inner a{
+    float: right;
+    text-decoration: none;
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    color: #1b56fd;
+}
+
+@media only screen and (max-width:800px) {
+    .resume_inner{
+        width: 90%;
+        margin: 20px auto;
+    }
+}
+
+/* @media only screen and (max-width:600px){
+    
+    width: 95%;
+    margin: 20px;
+} */

@@ -4,6 +4,12 @@ import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+import email from "../Images/mail.svg"
+import call from "../Images/call.svg"
+import linkedin from "../Images/linkedin.png"
+import github from "../Images/git1.png"
+import { Link } from 'react-router-dom';
+
 const Contact = () => {
 
 
@@ -72,10 +78,52 @@ const Contact = () => {
   return (
     <div id='Contact' className='Contact-container'>
         <ToastContainer />
-        <h1>Contact</h1>
-        <p>Feel free to Contact me by submitting the form below and I will get back to you as soon as possible</p>
+        <h1 className='heading'>Contact me</h1>
+        <p className='para' style={{textAlign:'center' , color: 'rgb(92, 92, 92)'}}>Feel free to Contact me by submitting the form below and I will get back to you as soon as possible</p>
         <div className='inner-contact'>
+            <div className='connect'>
+                {/* <img src={contact} alt="" /> */}
+                <div>
+                    <h2 style={{marginBottom:"30px"}}><span style={{color:'#1b56fd'}}>Connect</span> with me</h2>
+                    <div>
+                        <div className='connect_li'>
+                            <img src={email} alt="" />
+
+                            <div>
+                            <Link to="mailto:rohitkolisd@gmail.com">rohitkolisd@gmail.com</Link>
+                            <p>For Any enquiry mail me at</p>
+                            </div>
+                        </div>
+                        <div className='connect_li'>
+                            <img src={call} alt="" />
+
+                            <div>
+                            <Link to="tel:9582207407">+91 9582207407</Link>
+                            <p>Can get in touch on call if urgent</p>
+                            </div>
+                        </div>
+                        <div className='connect_li'>
+                            <img src={linkedin} alt="" />
+
+                            <div>
+                            <Link to="https://www.linkedin.com/in/rohit-koli1/" target='_blank'>/rohit-koli1</Link>
+                            <p>Connect with me on linkedin for better understanding</p>
+                            </div>
+                        </div>
+                        <div className='connect_li'>
+                            <img src={github} alt="" />
+
+                            <div>
+                            <Link to="https://github.com/Rohitkolii" target='_blank'>/Rohitkolii</Link>
+                            <p>Here's my git repositorie's</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <form ref={form} onSubmit={sendEmail}>
+                <h2>Get in <span style={{color: "#1b56fd"}}>Touch</span></h2>
                 {/* <div> */}
                     <label>Name <span>*</span> :</label> <br />
                     <input onChange={(e)=> setname(e.target.value)} type="text" name="user_name" value={name}  placeholder='Enter Name' />
@@ -88,7 +136,7 @@ const Contact = () => {
 
                 {/* <div> */}
                     <label>Message <span>*</span> :</label> <br />
-                    <textarea onChange={(e)=> setmessage(e.target.value)} name="message" cols="30" rows="10" value={message} placeholder='Enter Message Here'></textarea>
+                    <textarea onChange={(e)=> setmessage(e.target.value)} name="message" value={message} placeholder='Enter Message Here'></textarea>
                     {err ? <p style={{fontSize: 15, color: 'rgb(255, 37, 37)', textAlign: 'left'}}>Please fill all fields! Message !</p> : '' }
                 {/* </div> */}
                 <input className='btn' type="submit" value="SUBMIT" />

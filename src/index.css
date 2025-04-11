@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 *{
   padding: 0;
   margin: 0;
@@ -11,9 +13,38 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* background-color: black; */
+  /* font-family: "Source Code Pro", monospace; */
+  background-color: #0A0A0A;
 }
-
+h1{
+  font-family: "Kaushan Script", cursive;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+.heading{
+  color: white;
+  /* color: black; */
+  width: 95%;
+  margin: auto;
+}
+
+.para{
+  color: rgb(37, 37, 37);
+  color: rgb(166, 166, 166);
+  width: 95%;
+  margin: auto;
+}
+
+.para a{
+  color: white;
+}
+
+.subp a, .subp li, .subp p{
+  color: white;
+  /* color: black; */
 }

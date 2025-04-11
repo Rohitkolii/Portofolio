@@ -1,11 +1,12 @@
 .SkillsCon{
     text-align: center;
-    padding: 50px 20px;
-    background-color: rgb(243, 243, 243);
+    padding: 50px 0;
+    padding-top: 80px;
+    /* background-color: rgb(243, 243, 243); */
 }
 
 .skillintro{
-    margin: 20px auto;
+    /* margin: 20px auto; */
     text-transform: capitalize;
 }
 
@@ -21,12 +22,13 @@
 .skillsimg img{
     width: 100%;
     object-fit: contain;
+    aspect-ratio: 2/3;
     transition: .5s;
     /* border: 1px solid red; */
 }
 
 .skillsimg img:hover{
-    transform:translateY(-10px) scale(120%);
+    transform:translateY(-10px) scale(103%);
 }
 
 .skillsimg p{
@@ -36,21 +38,21 @@
 }
 
 .innerSkills{
-    width: 70%;
+    width: 100%;
     margin: auto;
-    margin: 60px auto;
+    margin: 50px auto;
 }
 
 .skillarea{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     justify-content: center;
     align-items: center;
-    gap: 30px;
-    width: 70%;
+    /* gap: 20px; */
+    width: 80%;
     margin: auto;
 }
-
+/* 
 .SkillsCon h1:hover::after{
     width: 150px;
 }
@@ -62,12 +64,32 @@
     margin: 5px auto;
     height: 4px;
     border-radius: 10px;
-    background-color: #4C4C6D;
+    background-color: #0185ca;
     transition: .3s;
-}
+} */
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 950px) {
     .skillarea{
-        gap: 20px 35px;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        justify-content: center;
+        align-items: center;
+        /* gap: 20px; */
+        width: 95%;
+        margin: auto;
+    }
+}
+@media only screen and (max-width: 700px){
+    .skillarea{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 5px;
+    }
+}
+@media only screen and (max-width: 500px){
+    .skillarea{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5px;
     }
 }

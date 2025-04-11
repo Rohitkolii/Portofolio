@@ -1,28 +1,60 @@
 .Contact-container{
-    background: url('https://img.freepik.com/free-vector/white-gray-geometric-pattern-background-vector_53876-136510.jpg?w=826&t=st=1668964211~exp=1668964811~hmac=e4c34e35c874d1adf974f69e36b672b8de8d5774bcf6d8404246ec6e4aca48a4');
-    background-size: cover;
-    /* height: 100vh; */
-    padding: 50px 0;
+    /* background-size: cover; */
+    padding: 30px 0;
     width: 100%;
+    background-color: #0a0a0b;
 }
 
 .inner-contact{
-    /* background-color: rgba(0, 0, 0, 0.836); */
     padding: 20px 0;
-    width: 50%;
-    margin: auto;
-    display: flex;
-    justify-content: center;
+    width: 80%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
 }
 
-form{
-    background-color: white;
+.connect img{
+    width: 50px;
+}
+
+.connect h2{
+    color: white;
+}
+
+.connect{
+    background-color: #000;
     padding: 50px;
+    text-align: left;
+}
+.connect_li{
+    /* margin-top: 50px; */
+    display: flex;
+    gap: 20px;
+    color: white;
+    margin-bottom: 20px;
+    /* justify-content: left; */
+}
+
+.connect_li a{
+    color: white;
+    text-decoration: none;
+}
+
+.connect_li div p:nth-child(2){
+    color: rgb(92, 92, 92);
+}
+
+.Contact-container form{
+    background-color: #000;
+    padding: 30px;
+    padding-bottom: 50px;
     border-radius: 5px;
     width: 100%;
-    margin-top: 30px;
+    /* margin-top: 30px; */
     color: rgb(92, 92, 92);;
-    box-shadow: 1px 1px 10px rgb(168, 168, 168);
+    box-shadow: 1px 1px 5px rgba(18, 18, 18, 0.418);
+    height: 100%;
 }
 
 
@@ -30,16 +62,18 @@ form{
     text-align: center;
     /* color: white; */
     /* padding: 50px 0; */
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
+    /* text-transform: capitalize; */
+    color: white;
 }
 
 .Contact-container p{
-    text-align: center;
+    /* text-align: center; */
     font-size: 15px;
-    color: rgb(92, 92, 92);
+    /* color: ; */
 }
 
-.Contact-container h1:hover::after{
+/* .Contact-container h1:hover::after{
     width: 150px;
 }
 
@@ -50,25 +84,26 @@ form{
     margin: 5px auto;
     height: 4px;
     border-radius: 10px;
-    background-color: #4C4C6D;
+    background-color: #1b56fd;
     transition: .3s;
-}
+} */
 
 
 .inner-contact form input{
-    width: 98%;
+    width: 100%;
     height: 50px;
     border-radius: 5px;
     outline: transparent;
     border: transparent;
-    margin: 10px 0 20px 0;
+    margin: 5px 0 10px 0;
     padding-left: 2%;
-    background-color: #f1f1f1;
+    /* background-color: #f1f1f1; */
     /* font-weight: 600; */
     font-size: 15px;
-    color: rgb(92, 92, 92);
+    background: transparent;
+    border: 1px solid rgb(92, 92, 92);
+    /* color: white; */
 }
-
 
 .inner-contact form label span{
     color: rgb(255, 37, 37);
@@ -82,73 +117,90 @@ textarea:focus{
 }
 
 .inner-contact textarea{
-    width: 98%;
+    width: 100%;
     padding: 2%;
-    margin-top: 15px;
-    background-color: #f1f1f1;
+    margin-top: 5px;
+    outline: 1px solid rgb(92, 92, 92);
+    /* background-color: #f1f1f1; */
+    background: transparent;
     border: transparent;
     border-radius: 5px;
-    height: 150px;
+    height: 100px;
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
-}
-
-.inner-contact .btn{
-    background-color: #4C4C6D;
-    cursor: pointer;
-    transition: .3s;
-    height: 40px;
-    font-size: 15px;
-    height: 50px;
-    float: right;
-    padding: 5px 30px;
-    width: fit-content;
     color: white;
 }
 
-.inner-contact .btn:hover{
-    background-color: #4C4C6De0;
+.inner-contact .btn{
+    background-color: #1b56fd;
+    cursor: pointer;
+    transition: .3s;
+    font-size: 15px;
+    height: 35px;
+    float: right;
+    /* padding: 5px 30px; */
+    width: fit-content;
+    color: white;
+    border: transparent;
+    margin-top: 20px;
 }
+
+.Contact-container h2{
+    font-family: "Kaushan Script", cursive;
+    margin-bottom: 10px;
+}
+
+.inner-contact .btn:hover{
+    background-color: #1b57fde4;
+}
+
+@media only screen and (max-width:1200px){
+    .inner-contact{
+        width: 90%;
+        margin: 20px auto;
+        gap: 20px;
+    }
+}
+
 
 @media only screen and (max-width:1000px){
     .inner-contact{
-        width: 80%;
-    }
-
-    form{
-        width: 80%;
+        width: 100%;
+        margin: 20px auto;
+        gap: 5px;
     }
 }
 
-
-@media only screen and (max-width:650px){
+@media only screen and (max-width:900px){
     .inner-contact{
-        width: 98%;
+        grid-template-columns: repeat(1, 100%);
     }
-    
+
     form{
-        width: 85%;
-        padding: 30px;
-    }
-
-
-    
-}
-
-@media only screen and (max-width:550px){
-    .inner-contact{
         width: 100%;
     }
+    
+    
+}
 
-    form{
-        padding: 30px 10px;
-        width: 100vw;
-        margin: 20px auto;
-        border-radius: 0px;
-        box-shadow: none;
+
+@media only screen and (max-width:500px){
+    .connect img{
+        width: 40px;
+        height: 40px;
     }
 
-    .Contact-container p{
-        width: 95%;
+    .inner-contact .btn{
+        background-color: #1b56fd;
+        cursor: pointer;
+        transition: .3s;
+        font-size: 15px;
+        height: 40px;
+        float: right;
+        padding: 5px 10px;
+        width: fit-content;
+        color: white;
+        border: transparent;
+        margin-top: 20px;
     }
 }

@@ -2,7 +2,7 @@
     position: absolute;
     left: 0px;
     top: 35%;
-    /* background-color: white; */
+    background-color: white;
     /* background-color: rgb(25, 25, 25); */
     border-radius: 0px 5px 5px 0px;
     box-shadow: 1px 1px 10px rgba(95, 95, 95, 0.195);
@@ -35,7 +35,7 @@
 
 .social-icons:hover{
     transform: translateX(10px);
-    color: #4C4C6D;
+    color: #1B56FD;
 }
 
 @media only screen and (max-width: 1000px) {

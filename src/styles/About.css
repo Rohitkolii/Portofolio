@@ -1,163 +1,108 @@
-.About-container{
-    background-color: rgba(255, 255, 255, 0.384);
-}
-
-
 .About-inner_Container{
-    width: 95%;
-    /* margin: 50px auto; */
-    padding: 50px 0;
+    /* width: 80%; */
+    margin: 50px auto;
+    /* font-family: "Source Code Pro", monospace; */
+    /* font-family: "Fira Code", monospace; */
 }
 
 .About-row1{
-    text-align: center;
-    margin-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    /* grid-template-columns: repeat(2, 1fr); */
+    gap: 50px;
+    width: 80%;
+    margin: auto;
 }
 
-.About-row1 h1{
-    font-size: 35px;
-    text-transform: uppercase;
+.About-row1 div:nth-child(1){
+    width: 60%;
+    /* background-color: red; */
 }
 
-.About-row1 h1:hover::after{
-    width: 150px;
+.About-row1 div:nth-child(2){
+    width:40%;
+    height: 450px;
+    /* background-color: blue; */
 }
 
-.About-row1 h1::after{
-    content: '';
-    display: block;
-    width: 35px;
-    margin: 5px auto;
-    height: 4px;
-    border-radius: 10px;
-    background-color: #4C4C6D;
-    transition: .3s;
+.About-row1 img{
+    width: 80%;
+    height: 100%;
+    float: right;
+    object-fit: cover;
+    object-position: top;
+}
+
+.About-container h1{
+    font-family: "Kaushan Script", cursive;
+    /* font-family: "Fira Code", monospace; */
+    /* font-family: "Source Code Pro", monospace; */
+    font-size: 30px;
+    /* color: #1B56FD; */
 }
 
 .About-row1 p{
-    color: rgb(46, 46, 46);
-    font-size: 17px;
-    width: 65%;
-    margin: auto;
-    /* font-weight: 500; */
+    font-size: 18px;
 }
 
-.About-row2{
-    display: flex;
-    padding: 10px 20px;
+.Drives_in h1{
+    font-size: 50px;
 }
-
-.About-row2 h3{
-    font-size: 24px;
-}
-
-.About-row2_col1{
-    width: 50%;
-    margin: auto;
-    padding: 10px 20px;
-}
-
-.About-row2_col1 p{
-    color: rgb(51, 50, 50);
-    font-size: 16px;
-    /* font-weight: 500; */
-}
-
-.About-row2_col1 p span{
-    color: rgb(51, 50, 50);
-    font-weight: 500;
-}
-
-/* .About-row2_col2 div{
-    width: 75%;
-    margin: auto;
-} */
-
-/* .About-row2_col2 ul{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0;
-} */
-
-/* .skills-tag{
-    background-color: #e7e7e7;
-    margin: 5px;
-    padding: 12px 18px;
-    border-radius: 6px;
-    list-style: none;
-    font-weight: 600;
-    color: #666;
-    transition: .5s;
-} */
-
-/* .skills-tag:hover{
-    background-color: #dddbdb;
-    color: #4C4C6D;
-    cursor: pointer;
-} */
-
-.About-row2_col2{
-    margin: auto;
-}
-
-.About-row2_col2 .abt-img{
-    width: 300px;
-    cursor: pointer;
-}
-
-
-.About-row2_col2 .abt-img img{
+.Drives_in{
     width: 100%;
+    /* height: 500px; */
+    background-image:linear-gradient(to bottom, rgba(37, 37, 37, 0.218), rgba(0, 0, 0, 0.87)) ,url("../Images/mt.jpg");
+    background-position: center;
+    background-size: cover;
+    /* border-radius: 24px; */
+    padding: 150px;
+    color: white;
+    box-shadow: 1px 1px 5px black;
+}
+
+.Drives .Drives_in{
+    /* width: 80%; */
+    margin: auto;
+    text-align: center;
+}
+
+.Drives div img{
+    width: 100%;
+    /* height: 250px; */
+    height: 100%;
     object-fit: cover;
-    object-position: top;
-    box-shadow: 1px 1px 5px gray;
-    border-radius: 22px;
-    transition: all ease .5s;
+    /* position: absolute; */
 }
 
-.About-row2_col2 .abt-img img:hover{
-    transform: scale(98%) skew(3deg);
+.lookingfor{
+    text-align: center;
+    padding: 100px 0;
+    background-color: black;
 }
 
-
-@media only screen and (max-width: 1000px) {
-    
-    .About-row2{
-        flex-direction: column;
-        padding: 0px;
-        gap: 20px;
-    }
-    
-    .About-inner_Container{
-        /* background-color: aqua; */
-        width: 99%;
-        margin: none;
-    }
-    
-    .About-row2_col2 div{
-        width: 90%;
-        margin: auto;
-    }
-    
-    .About-row2_col1{
-        width: 100%;
-        margin-bottom: 50px;
-        /* padding: 10px 20px; */
-    }
-    
-    .About-row2_col1 p{
-        font-size: 15px;
-    }
-
-    .About-row1 p{
-        width: 90%;
-        font-size: 15px;
-    }
-    
+.lookingfor div{
+    width: 80%;
+    margin: auto; 
 }
 
-@media only screen and (max-width: 400px) {
-    .About-row2_col2 .abt-img{
+@media only screen and (max-width:800px) {
+    .Drives_in{
+        padding: 100px 50px;
+ }   
+}
+
+@media only screen and (max-width:500px) {
+    .Drives_in{
+        padding: 50px 10px;
+    }
+
+    .lookingfor div{
         width: 95%;
+        margin: auto; 
+    }
+
+    .Drives_in h1{
+        font-size: 35px;
     }
 }
